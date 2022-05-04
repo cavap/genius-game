@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./main.js" charset="UTF-8" defer></script>
+    <title>Genius Game</title>
+</head>
+<body>
+    <div id="button">
+        <button id="buttonStart" onclick="startGame()">Start</button>
+    </div>
+
+    <div id="game">
+        <div class="labels">
+            <h1>Score</h1>
+            <h1 id="currentScore">0</h1>
+        </div>
+        <div id="genius">
+            <div id="blue" onclick="handleClick(this.id)"></div>
+            <div id="yellow" onclick="handleClick(this.id)"></div>
+            <div id="red" onclick="handleClick(this.id)"></div>
+            <div id="green" onclick="handleClick(this.id)"></div>
+        </div>
+        <div class="labels">
+            <h1>Best </h1>
+            <h1 id="bestScore">0</h1>
+        </div>
+    </div>
+</body>
+</html>
